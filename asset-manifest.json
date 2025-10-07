@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cyber-portfolio/static/css/main.f6e9b1aa.css",
+    "main.js": "/cyber-portfolio/static/js/main.b2803d5c.js",
+    "static/js/453.ad7768ec.chunk.js": "/cyber-portfolio/static/js/453.ad7768ec.chunk.js",
+    "index.html": "/cyber-portfolio/index.html",
+    "main.f6e9b1aa.css.map": "/cyber-portfolio/static/css/main.f6e9b1aa.css.map",
+    "main.b2803d5c.js.map": "/cyber-portfolio/static/js/main.b2803d5c.js.map",
+    "453.ad7768ec.chunk.js.map": "/cyber-portfolio/static/js/453.ad7768ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6e9b1aa.css",
+    "static/js/main.b2803d5c.js"
+  ]
+}
