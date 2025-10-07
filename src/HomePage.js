@@ -74,7 +74,7 @@ export default function HomePage() {
             About Me
           </Link>
           <a
-            href="https://drive.google.com/file/d/1Pbyqu8J29OemHCPtcuW9_ULwrHrI1US8/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1h5wc0cGHJM7MxfSSjULVxsFYmIcCa81B/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             style={buttonBase}
