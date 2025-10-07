@@ -1,0 +1,150 @@
+.navbar-link {
+  border: 2px solid;
+  border-radius: 2em;
+  padding: 0.35em 1.2em;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'Bellota Text', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s;
+  display: inline-block;
+  background: transparent;
+  text-decoration: none;
+  outline: none;
+}
+
+.navbar-link.home {
+  background: transparent;
+}
+
+.navbar-link.home,
+.navbar-link.home:visited {
+  color: var(--nav-outline-color);
+  border-color: var(--nav-outline-color);
+}
+
+.navbar-link.home:hover,
+.navbar-link.home.active {
+  background: #FF1744;
+  color: #fff;
+  border-color: #FF1744;
+}
+
+.navbar-link:not(.home) {
+  color: var(--nav-outline-color);
+  border-color: var(--nav-outline-color);
+}
+
+.navbar-link:not(.home):hover,
+.navbar-link:not(.home).active {
+  background: #FF1744;
+  color: #fff;
+  border-color: #FF1744;
+}
+
+/* ===========================
+   Mobile Layout Improvements
+   =========================== */
+@media (max-width: 768px) {
+  /* Main container stacks vertically with better padding */
+  .main-container {
+    flex-direction: column !important;
+    padding: 2.5rem 3vw 1.2rem 3vw !important;
+    gap: 2rem !important;
+    align-items: stretch !important;
+    width: 100vw !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+  }
+
+  /* Hide vertical dividers */
+  .divider {
+    display: none !important;
+  }
+
+  /* Sections take full width and stack, with extra spacing */
+  .left-section,
+  .right-section,
+  .middle-section {
+    width: 100% !important;
+    margin-top: 0 !important;
+    margin-bottom: 2rem !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+  }
+
+  /* Navigation bar: stack vertically, center, and add shadow */
+  nav {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    background: rgba(255,255,255,0.95);
+    border-radius: 1.2em;
+    padding: 0.5em 0.7em;
+  }
+
+  /* Navbar links: bigger, bolder, more tappable */
+  .navbar-link {
+    width: 100% !important;
+    text-align: center;
+    margin-bottom: 0.7rem;
+    font-size: 1.18rem !important;
+    padding: 0.65em 0 !important;
+    letter-spacing: 0.5px;
+    border-radius: 2em;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+
+  /* Remove last margin on navbar link */
+  .navbar-link:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Make headings stand out but not oversized */
+  h1 {
+    font-size: 2.1rem !important;
+    margin-bottom: 1.1rem !important;
+    text-align: left !important;
+    word-break: break-word;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    text-align: left !important;
+    word-break: break-word;
+  }
+
+  /* Body text: comfortable line height and size */
+  p, ul, li {
+    font-size: 1.08rem !important;
+    line-height: 1.7 !important;
+    word-break: break-word;
+  }
+
+  /* Buttons: easy to tap, full width, more spacing */
+  button {
+    width: 100% !important;
+    font-size: 1.13rem !important;
+    padding: 0.85em 0 !important;
+    margin-bottom: 1rem !important;
+    border-radius: 2em !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+
+  /* Make sure images and code boxes fit the screen */
+  img, .code-box, pre, code {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 1em !important;
+    word-break: break-word;
+    overflow-x: auto;
+  }
+
+  /* Hide any unnecessary desktop-only elements */
+  .desktop-only {
+    display: none !important;
+  }
+}
