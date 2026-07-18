@@ -1,0 +1,170 @@
+.navbar{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2rem 5vw;
+    box-sizing:border-box;
+    position:relative;
+}
+
+.navbar-logo{
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
+}
+
+.logo{
+    font-family:"Patua One",cursive;
+    font-size:1.6rem;
+    font-weight:700;
+    color:inherit;
+    user-select:none;
+}
+
+.logo span{
+    color:#FF1744;
+}
+
+/* Theme Toggle */
+
+.theme-toggle{
+    position:relative;
+    width:64px;
+    height:32px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    background:#222;
+    transition:.3s;
+}
+
+.theme-toggle.light{
+    background:#FF1744;
+}
+
+.toggle-circle{
+    position:absolute;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    background:#fff;
+    left:4px;
+    transition:.3s;
+}
+
+.theme-toggle.light .toggle-circle{
+    left:36px;
+}
+
+.theme-toggle span{
+    position:absolute;
+    font-size:14px;
+}
+
+.moon{
+    left:10px;
+}
+
+.sun{
+    right:10px;
+}
+
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+.nav-link{
+    padding:.55rem 1.5rem;
+    border:2px solid currentColor;
+    border-radius:40px;
+    text-decoration:none;
+    color:inherit;
+    background:transparent;
+    font-family:'Quicksand',sans-serif;
+    font-weight:700;
+    transition:all .3s ease;
+}
+
+.nav-link:hover{
+    background:#B71C1C;
+    border-color:#B71C1C;
+    color:#fff;
+}
+
+.nav-link.active{
+    background:transparent;
+    border-color:currentColor;
+    color:inherit;
+}
+
+/* Hamburger */
+
+.menu-btn{
+    display:none;
+    background:none;
+    border:none;
+    cursor:pointer;
+    color:inherit;
+    font-size:2rem;
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .navbar{
+        padding:1.5rem 2rem;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-wrap:wrap;
+        align-items:center;
+        padding:1.25rem;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav-links{
+        width:100%;
+        display:none;
+        flex-direction:column;
+        gap:1rem;
+        margin-top:1.5rem;
+
+        /* Important fixes */
+        position:static;
+        background:transparent;
+        padding:0;
+    }
+
+    .nav-links.open{
+        display:flex;
+    }
+
+    .nav-link{
+        width:100%;
+        text-align:center;
+        padding:.85rem 0;
+        font-size:1rem;
+    }
+
+    .logo{
+        font-size:1.4rem;
+    }
+
+}

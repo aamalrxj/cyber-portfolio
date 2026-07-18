@@ -1,0 +1,117 @@
+.ttt {
+  width: 100%;
+  text-align: center;
+  color: inherit;
+}
+
+.ttt h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.6rem;
+}
+
+.ttt p {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.ttt-board {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  grid-template-rows: repeat(3, 70px);
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.ttt-cell {
+  width: 70px;
+  height: 70px;
+  border: 2px solid;
+  border-radius: 12px;
+  background: transparent;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.ttt-cell:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+.ttt-cell:disabled {
+  cursor: default;
+}
+
+.ttt-restart {
+  margin-top: 1.5rem;
+  border: none;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ttt-restart:hover {
+  transform: translateY(-2px);
+}
+
+/* -----------------------
+   Tablet
+------------------------*/
+
+@media (max-width: 768px) {
+
+  .ttt-board {
+    grid-template-columns: repeat(3, 65px);
+    grid-template-rows: repeat(3, 65px);
+    gap: 8px;
+  }
+
+  .ttt-cell {
+    width: 65px;
+    height: 65px;
+    font-size: 1.8rem;
+  }
+
+  .ttt h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* -----------------------
+   Mobile
+------------------------*/
+
+@media (max-width: 480px) {
+
+  .ttt-board {
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+    gap: 7px;
+  }
+
+  .ttt-cell {
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
+  }
+
+  .ttt h2 {
+    font-size: 1.25rem;
+  }
+
+  .ttt p {
+    font-size: 0.95rem;
+  }
+
+  .ttt-restart {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+}

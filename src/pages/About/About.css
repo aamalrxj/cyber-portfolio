@@ -1,0 +1,152 @@
+.about-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:3rem;
+    width:100%;
+    min-height:calc(100vh - 110px);
+    padding:2rem 5%;
+    box-sizing:border-box;
+}
+
+/* Left Side */
+
+.about-left{
+    flex:2;
+}
+
+.about-title{
+    font-size:2.6rem;
+    margin-bottom:1rem;
+    font-family:'Patua One',serif;
+}
+
+.about-name{
+    font-size:2.4rem;
+    font-family:'Quicksand',sans-serif;
+    font-weight:700;
+    line-height:1.2;
+    margin-bottom:.7rem;
+}
+
+.about-role{
+    font-size:1.1rem;
+    margin-bottom:1.8rem;
+    letter-spacing:1px;
+    font-family:'Quicksand',sans-serif;
+    font-weight:700;
+}
+
+.about-description{
+    max-width:600px;
+    font-size:1rem;
+    line-height:1.8;
+    font-family:'Quicksand',sans-serif;
+    font-weight:400;
+}
+
+/* Divider */
+
+.about-divider{
+    width:2px;
+    align-self:stretch;
+}
+
+/* Skills Card */
+
+.skills-card{
+    flex:1;
+    padding:2rem;
+    border-radius:18px;
+    border:1px solid;
+    box-sizing:border-box;
+}
+
+.skills-title{
+    font-size:2rem;
+    margin-bottom:1.5rem;
+    font-family:'Patua One',serif;
+}
+
+.skill-group{
+    margin-bottom:1.3rem;
+    font-family:'Quicksand',sans-serif;
+}
+
+.skill-group h4{
+    margin-bottom:.8rem;
+    font-size:1.05rem;
+}
+
+.skill-grid{
+    display:grid;
+    grid-template-columns:repeat(0,minmax(120px,1fr));
+    gap:10px 20px;
+}
+
+.skill-grid span{
+    position:relative;
+    padding-left:16px;
+    font-size:.95rem;
+}
+
+.skill-grid span::before{
+    content:"•";
+    position:absolute;
+    left:0;
+    color:#FF1744;
+    font-weight:bold;
+}
+
+/* ---------------- Mobile ---------------- */
+
+@media (max-width:768px){
+
+    .about-page{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:2rem;
+        padding:2rem 1.5rem;
+        overflow-x:hidden;
+    }
+
+    .about-left{
+        width:100%;
+    }
+
+    .about-divider{
+        display:none;
+    }
+
+    .about-title{
+        font-size:2.2rem;
+    }
+
+    .about-name{
+        font-size:2rem;
+    }
+
+    .about-role{
+        font-size:1rem;
+    }
+
+    .about-description{
+        font-size:.95rem;
+        line-height:1.7;
+    }
+
+    .skills-card{
+        width:100%;
+        max-width:100%;
+        padding:1.5rem;
+    }
+
+    .skills-title{
+        font-size:1.8rem;
+    }
+
+    .skill-grid{
+        grid-template-columns:1fr;
+    }
+
+}

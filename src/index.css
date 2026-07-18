@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body,
+#root{
+    margin:0;
+    padding:0;
+    width:100%;
+    min-height:100%;
+    background:#181a1b;
+    color:white;
+    overflow-x:hidden;
+    font-family:'Quicksand',sans-serif;
+}
+
+button,
+input,
+textarea,
+a{
+    font-family:'Quicksand',sans-serif;
+}

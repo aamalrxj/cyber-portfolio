@@ -1,0 +1,187 @@
+.projects-page {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.projects-title {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  font-family:'Patua One',serif;
+
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-card {
+  border: 1.5px solid;
+  border-radius: 18px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-name {
+  font-size: 1.45rem;
+  margin: 0;
+  flex: 1;
+}
+
+.github-link {
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.github-link:hover {
+  opacity: 0.75;
+}
+
+.project-stack {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.45rem 1rem;
+  border: 2px solid;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.project-list {
+  margin-top: 1.3rem;
+  padding-left: 1.5rem;
+  line-height: 1;
+}
+
+.project-list li {
+  margin-bottom: .5rem;
+}
+
+.image-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: .8rem 1.6rem;
+  border: 2px solid;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: .3s;
+}
+
+.image-btn:hover {
+  background: #B71C1C;
+  color: #fff !important;
+  border-color: #B71C1C !important;
+}
+
+/* ---------- Large Tablets ---------- */
+
+@media (max-width: 992px) {
+
+  .projects-page {
+    padding: 2rem 1.25rem;
+  }
+
+  .projects-title {
+    font-size: 2.4rem;
+  }
+
+}
+
+/* ---------- Tablets ---------- */
+
+@media (max-width: 768px) {
+
+  .projects-page {
+    padding: 1.5rem 1rem;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .project-card {
+    padding: 1.3rem;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .github-link {
+    width: 100%;
+    text-align: center;
+    padding: .75rem;
+    border: 2px solid currentColor;
+    border-radius: 999px;
+  }
+
+  .project-stack {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .image-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+}
+
+/* ---------- Phones ---------- */
+
+@media (max-width: 480px) {
+
+  .projects-page {
+    padding: 1rem;
+  }
+
+  .projects-title {
+    font-size: 1.8rem;
+  }
+
+  .project-name {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-list {
+    padding-left: 1.2rem;
+    font-size: .95rem;
+  }
+
+  .github-link,
+  .image-btn {
+    font-size: .95rem;
+  }
+
+}
